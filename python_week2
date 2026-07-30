@@ -1,0 +1,204 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPNfKwZBThpsv5qgvaNVX3B",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/25pa1a4590-hue/python_lab/blob/main/python_week2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pj3X47n4izZw",
+        "outputId": "c7210c20-300a-4286-f7fd-e46993c77eba"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "6\n",
+            "4\n",
+            "b is greater\n"
+          ]
+        }
+      ],
+      "source": [
+        "a=int (input())\n",
+        "b=int (input())\n",
+        "c=int (input())\n",
+        "if(a>b and a>c):\n",
+        "  print(f\"a is greater\")\n",
+        "elif(b>a and b>c):\n",
+        "  print(f\"b is greater\")\n",
+        "else:\n",
+        "  print(f\"a is  greater\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=int (input(\"enter a num:\"))\n",
+        "if (a%3==0):\n",
+        "  print(\"fizz\")\n",
+        "elif(a%5==0):\n",
+        "  print(\"buzz\")\n",
+        "elif(a%3==0 and a%5==0):\n",
+        "  print(\"fizzbuzz\")\n",
+        "else:\n",
+        "  print(\"invalid\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_oVteQIpklE_",
+        "outputId": "932f779f-4222-4db1-e6b4-2400445f6f50"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a num:5\n",
+            "buzz\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#complex\n",
+        "a=complex(input(\"enter a complex number:\"))\n",
+        "b=complex(input(\"enter a complex number:\"))\n",
+        "print(a+b)\n",
+        "print(a-b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "c1H_vu0Hl-dt",
+        "outputId": "327d2ce1-7467-428a-f318-04250c8c9d99"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a complex number:2+3j\n",
+            "enter a complex number:3-6j\n",
+            "(5-3j)\n",
+            "(-1+9j)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#match case\n",
+        "a=int (input(\"enter a number:\"))\n",
+        "match a:\n",
+        "  case 1:\n",
+        "    print(\"sun\")\n",
+        "  case 2:\n",
+        "    print(\"mon\")\n",
+        "  case 3:\n",
+        "    print(\"tue\")\n",
+        "  case 4:\n",
+        "    print(\"wed\")\n",
+        "  case 5:\n",
+        "    print(\"thu\")\n",
+        "  case 6:\n",
+        "    print(\"fri\")\n",
+        "  case 7:\n",
+        "    print(\"sat\")\n",
+        "  case '_':\n",
+        "    print(\"invlalid\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FdM_Am1ZpYWB",
+        "outputId": "35a4ec6a-1257-43fc-d99f-2fb7cba0a45b"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a number:7\n",
+            "sat\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#loops\n",
+        "i=1\n",
+        "while(i<=10):\n",
+        "  print(i,end=\" \")\n",
+        "  i=i+1\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1lEpDiDPu9zs",
+        "outputId": "d9a6ea49-de34-45ba-9597-ce36db383aa8"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 2 3 4 5 6 7 8 9 10 "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "PRNulzV8wX6Z"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
