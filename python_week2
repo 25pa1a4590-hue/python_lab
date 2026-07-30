@@ -1,20 +1,4 @@
 {
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": [],
-      "authorship_tag": "ABX9TyPNfKwZBThpsv5qgvaNVX3B",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
   "cells": [
     {
       "cell_type": "markdown",
@@ -28,7 +12,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 2,
+      "execution_count": null,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
@@ -38,8 +22,8 @@
       },
       "outputs": [
         {
-          "output_type": "stream",
           "name": "stdout",
+          "output_type": "stream",
           "text": [
             "5\n",
             "6\n",
@@ -62,45 +46,39 @@
     },
     {
       "cell_type": "code",
-      "source": [
-        "a=int (input(\"enter a num:\"))\n",
-        "if (a%3==0):\n",
-        "  print(\"fizz\")\n",
-        "elif(a%5==0):\n",
-        "  print(\"buzz\")\n",
-        "elif(a%3==0 and a%5==0):\n",
-        "  print(\"fizzbuzz\")\n",
-        "else:\n",
-        "  print(\"invalid\")\n"
-      ],
+      "execution_count": 27,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "_oVteQIpklE_",
-        "outputId": "932f779f-4222-4db1-e6b4-2400445f6f50"
+        "outputId": "d46148e1-f854-481d-e73f-a90d9f232952"
       },
-      "execution_count": 6,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "enter a num:5\n",
-            "buzz\n"
+            "enter a num:30\n",
+            "fizzbuzz\n"
           ]
         }
+      ],
+      "source": [
+        "a=int (input(\"enter a num:\"))\n",
+        "if (a%3==0 and a%5!=0):\n",
+        "  print(\"fizz\")\n",
+        "elif(a%5==0 and a%3 != 0):\n",
+        "  print(\"buzz\")\n",
+        "elif(a%3==0 and a%5==0):\n",
+        "  print(\"fizzbuzz\")\n",
+        "else:\n",
+        "  print(\"invalid\")\n"
       ]
     },
     {
       "cell_type": "code",
-      "source": [
-        "#complex\n",
-        "a=complex(input(\"enter a complex number:\"))\n",
-        "b=complex(input(\"enter a complex number:\"))\n",
-        "print(a+b)\n",
-        "print(a-b)"
-      ],
+      "execution_count": null,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
@@ -108,11 +86,10 @@
         "id": "c1H_vu0Hl-dt",
         "outputId": "327d2ce1-7467-428a-f318-04250c8c9d99"
       },
-      "execution_count": 18,
       "outputs": [
         {
-          "output_type": "stream",
           "name": "stdout",
+          "output_type": "stream",
           "text": [
             "enter a complex number:2+3j\n",
             "enter a complex number:3-6j\n",
@@ -120,10 +97,35 @@
             "(-1+9j)\n"
           ]
         }
+      ],
+      "source": [
+        "#complex\n",
+        "a=complex(input(\"enter a complex number:\"))\n",
+        "b=complex(input(\"enter a complex number:\"))\n",
+        "print(a+b)\n",
+        "print(a-b)"
       ]
     },
     {
       "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FdM_Am1ZpYWB",
+        "outputId": "35a4ec6a-1257-43fc-d99f-2fb7cba0a45b"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "enter a number:7\n",
+            "sat\n"
+          ]
+        }
+      ],
       "source": [
         "#match case\n",
         "a=int (input(\"enter a number:\"))\n",
@@ -144,35 +146,11 @@
         "    print(\"sat\")\n",
         "  case '_':\n",
         "    print(\"invlalid\")"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "FdM_Am1ZpYWB",
-        "outputId": "35a4ec6a-1257-43fc-d99f-2fb7cba0a45b"
-      },
-      "execution_count": 19,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "enter a number:7\n",
-            "sat\n"
-          ]
-        }
       ]
     },
     {
       "cell_type": "code",
-      "source": [
-        "#loops\n",
-        "i=1\n",
-        "while(i<=10):\n",
-        "  print(i,end=\" \")\n",
-        "  i=i+1\n"
-      ],
+      "execution_count": null,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
@@ -180,25 +158,91 @@
         "id": "1lEpDiDPu9zs",
         "outputId": "d9a6ea49-de34-45ba-9597-ce36db383aa8"
       },
-      "execution_count": 21,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "1 2 3 4 5 6 7 8 9 10 "
+          ]
+        }
+      ],
+      "source": [
+        "#loops\n",
+        "i=1\n",
+        "while(i<=10):\n",
+        "  print(i,end=\" \")\n",
+        "  i=i+1\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 33,
+      "metadata": {
+        "id": "PRNulzV8wX6Z",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "cbea9763-723e-477d-872e-2bbc97602f71"
+      },
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "1 2 3 4 5 6 7 8 9 10 "
+            "10 9 8 7 6 5 4 3 2 1 "
           ]
         }
+      ],
+      "source": [
+        "i=10\n",
+        "while(i>=1):\n",
+        "  print(i,end=\" \")\n",
+        "  i=i-1"
       ]
     },
     {
       "cell_type": "code",
-      "source": [],
+      "execution_count": 29,
       "metadata": {
-        "id": "PRNulzV8wX6Z"
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cHr0l-JFyJj0",
+        "outputId": "b3a0d6d6-243e-4b97-8400-7f46ab24da1e"
       },
-      "execution_count": null,
-      "outputs": []
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2 4 6 8 10 "
+          ]
+        }
+      ],
+      "source": [
+        "i=1\n",
+        "while(i<=10):\n",
+        " if(i%2==0):\n",
+        "  print(i,end=\" \")\n",
+        " i=i+1"
+      ]
     }
-  ]
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOJd8+beWsHwSslPJfYKII+",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
 }
