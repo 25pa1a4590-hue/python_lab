@@ -1,0 +1,145 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMK8kwFfy7+ct0D+k2Gg2As",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/25pa1a4590-hue/python_lab/blob/main/excercise%205\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RT1FdSEfTSlc",
+        "outputId": "90e5f71e-09b5-4a8e-d6d6-fd49f0ea25ae"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "good afternoon\n",
+            "['good', 'afternoon']\n",
+            "AI & ML\n",
+            "GOOD AFTERNOON\n",
+            "good afternoon\n",
+            "bad afternoon\n",
+            "6\n",
+            "4\n",
+            "good afternoon\n"
+          ]
+        }
+      ],
+      "source": [
+        "#string methods\n",
+        "a=\"good afternoon\"\n",
+        "b= a.split()   #split method\n",
+        "print(a)\n",
+        "print(b)\n",
+        "x=\"AI & ML\"    #strip method\n",
+        "print(x.strip())\n",
+        "print(a.upper())  #upper method\n",
+        "print(a.lower())  #lower method\n",
+        "y=a.replace(\"good\",\"bad\")  #replace method\n",
+        "print(y)\n",
+        "print(a.find(\"f\"))   #find method\n",
+        "print(a.count(\"o\"))  #count method\n",
+        "c=\" \".join(b)   #join method\n",
+        "print(c)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#find the no of vowels and consonants in a string\n",
+        "a=str(input(\"enter a string\"))\n",
+        "b=a.lower()\n",
+        "vowels=['a','e','i','o','u']\n",
+        "count_v=0\n",
+        "count_c=0\n",
+        "for ch in b:\n",
+        "  if ch.isalpha():\n",
+        "    if ch in vowels:\n",
+        "      count_v+=1\n",
+        "  else:\n",
+        "      count_c+=1\n",
+        "print(\"no of vowels\",count_v)\n",
+        "print(\"no of consonants\",count_c)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7L7XGjmBWOPn",
+        "outputId": "72f0e19e-c786-4d24-9a1d-5eac6ae47b23"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a stringGood afternoon\n",
+            "no of vowels 6\n",
+            "no of consonants 1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#program that checks sub string is in the original string or not\n",
+        "a=input(\"enter a string\")\n",
+        "b=input(\"enter a substring\")\n",
+        "if(b in a):\n",
+        "  print(\"substring is present\")\n",
+        "else:\n",
+        "  print(\"substring is not present\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "R4-hA_Olbcu3",
+        "outputId": "261411ef-0f7e-4d24-96a9-c84449d361bd"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a string  good \n",
+            "enter a substring g\n",
+            "substring is present\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
